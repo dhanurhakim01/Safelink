@@ -7,23 +7,23 @@ var home_page = '/';
 var huh = document['getElementById']('mmt');
 document['addEventListener']('DOMContentLoaded', function() {
     function _0x92c3x8() {
-        window['location']['href'] = 'https://www.codelistnull.com/'
+        window['location']['href'] = 'https://blog.masihterjaga.id/'
     }
 
     function _0x92c3x9() {
         if (!huh) {
             _0x92c3x8()
         };
-        if (huh['getAttribute']('href') != 'https://www.codelistnull.com/') {
+        if (huh['getAttribute']('href') != 'https://blog.masihterjaga.id/') {
             _0x92c3x8()
         };
         if (huh['getAttribute']('rel') != 'external') {
             _0x92c3x8()
         };
-        if (huh['getAttribute']('title') != 'Codelistnull.com') {
+        if (huh['getAttribute']('title') != 'Masih Terjaga Blog') {
             _0x92c3x8()
         };
-        if (huh['text'] != 'Codelistnull.com') {
+        if (huh['text'] != 'Masih Terjaga') {
             _0x92c3x8()
         }
     }
