@@ -4,31 +4,6 @@ var firstText = 'First';
 var lastText = 'Last';
 var urlactivepage = location['href'];
 var home_page = '/';
-var huh = document['getElementById']('mmt');
-document['addEventListener']('DOMContentLoaded', function() {
-    function _0x92c3x8() {
-        window['location']['href'] = 'https://blog.masihterjaga.id/'
-    }
-
-    function _0x92c3x9() {
-        if (!huh) {
-            _0x92c3x8()
-        };
-        if (huh['getAttribute']('href') != 'https://blog.masihterjaga.id/') {
-            _0x92c3x8()
-        };
-        if (huh['getAttribute']('rel') != 'external') {
-            _0x92c3x8()
-        };
-        if (huh['getAttribute']('title') != 'Masih Terjaga Blog') {
-            _0x92c3x8()
-        };
-        if (huh['text'] != 'Masih Terjaga') {
-            _0x92c3x8()
-        }
-    }
-    _0x92c3x9()
-});
 if (typeof firstText == 'undefined') {
     firstText = 'First'
 };
