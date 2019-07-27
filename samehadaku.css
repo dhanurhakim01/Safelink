@@ -256,6 +256,10 @@ font-size: 0.95em;
 }
 }
 
+
+
+]]></b:skin>
+
 <b:template-skin>
 <![CDATA[
 /* CSS Body Layout */
@@ -1054,3 +1058,200 @@ padding:10px !important;}
 @media screen and (max-width:320px){
 .post {padding:6px;}
 .img-thumbnail, .img-thumbnail img {width:100px;height:80px;}}
+
+
+</style>
+
+
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+.post img{background:#f7f8fa;height:auto;max-width:95%;border:0;}
+h3.post-title, h2.post-title, h1.post-title {margin-top:10px;}
+
+/* CSS Related Posts and Email Subscribe */
+#subs-and-redat {
+    background: #f2fbd8 none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px #cdd5b7;
+    display: none;
+    margin: 0;
+    padding: 15px;
+}
+.kotakleft {background:none;width:44%;margin:0;padding:20px 0;display:block;float:left}
+#related-post h4{font-family:&#39;Open Sans&#39;, Arial, sans-serif;font-size:20px;font-weight:700;text-transform:uppercase;color:#949a7f;margin:0 0 15px;margin-top:-15px;}
+#related-post li {line-height:1.8em;margin:0;padding:5px 0;}
+#related-post ul {list-style:none;margin:0;padding:0;}
+#related-post a {font-size:14px;color:#39484d;}
+#related-post a:hover {color:#555;}
+#subscribe-css {margin:0;padding:0;float:right;display:block;position:relative;}
+.subscribe-wrapper {background:#4b5f65;width:260px;height:200px;color:#fff;font-size:14px;font-family:&#39;Open Sans&#39;;line-height:20px;padding:40px 20px 10px 20px;text-align:center;border-radius:3px;}
+.subscribe-wrapper p {margin:0;margin-bottom:30px;}
+.subscribe-form {clear:both;display:block;margin:10px 0;overflow:hidden;}
+form.subscribe-form {clear:both;display:block;margin:10px 0 0;width:auto;overflow:hidden;}
+.subscribe-css-email-field {background:#39484d url(http://3.bp.blogspot.com/-b2pmxkhM8Is/VLQQ4PPCMMI/AAAAAAAAHO4/AGzYheKVaqs/s1600/sprites.png) no-repeat 1px -27px;color:#fff;margin:0 0 15px;padding:12px 40px;width:100%;border:none;}
+.subscribe-css-email-button {background:#0988bf;color:#fff;cursor:pointer;font-weight:700;
+padding:10px;text-transform:none;width:100%;border:none;font-size:17px;transition:all .5s ease-in;border-radius:3px;transition:all 0.3s ease-out;}
+.subscribe-css-email-button:hover {background:#0099cc;color:#fff;}
+
+/* CSS Share Button */
+.sharepost{overflow:hidden;text-align:center;margin-bottom:20px;margin-top:20px;padding:10px 0;}
+.sharepost li{float:left;margin:0 1%;width:18%;padding:0;list-style:none;position:relative;}
+.sharepost li a{padding:6px 0 6px 35px;color:#fff;display:block;border-radius:2px;}
+.sharepost li a:hover{color:#fff;}
+.sharepost li .twitter{background-color:#85c5f5;}
+.sharepost li .facebook{background-color:#6381c0;}
+.sharepost li .gplus{background-color:#ed6d5d;}
+.sharepost li .pinterest{background-color:#e44d52;}
+.sharepost li .linkedin{background-color:#2c9ad8;}
+.sharepost li .twitter:hover,.sharepost li .facebook:hover,.sharepost li .gplus:hover,
+.sharepost li .pinterest:hover,.sharepost li .linkedin:hover{color:#fff;}
+.sharepost li:last-child{margin-right:0}
+.sharepost li .fa:before{position:absolute;top:0;left:0;display:inline-block;padding:6.5px 12px;font-family:fontawesome;text-align:center;background:#f5f7fa;color:#b8bdc3;line-height:20px;}
+
+/* CSS Item Responsive */
+@media only screen and (max-width:640px){
+#related-post li {float:left;list-style:none;overflow:hidden;width:90%;}}
+
+@media screen and (max-width:420px) {
+.sharepost li{width:100%}}
+
+@media only screen and (max-width:320px){
+h3.post-title:before,h1.post-title:before,h3.post-title:after,h1.post-title:after,h3.post-title:after,h1.post-title:after,#comments .click-comment {visibility:hidden;}
+#comments .comment_avatar {width:20px;height:20px;max-width:20px;max-height:20px;background:#fcfcfc;padding:0;text-align:center;position:absolute;top:5px;right:5px;opacity:1;}
+#comments .comment_admin .comment_avatar{width:20px;height:20px;max-width:20px;max-height:20px;padding:4px 4px 19px;text-align:center;position:absolute;top:0;right:0;opacity:1;}
+#comments .comment_avatar img {width:20px;height:20px;max-width:20px;max-height: 20px;background:#f5f7fa;}
+.comment_avatar img{width:20px;height:20px;background:#f5f7fa;}}
+
+@media print {
+body{padding:0}
+#post-wrapper{width:100%;margin:0 auto;}
+.post {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px dotted #ebebeb;
+    box-shadow: none;
+    color: #000;
+    margin: 0 0 20px;
+    padding: 0 10px 0 0;
+    transition: all 0.3s linear 0s;
+}
+h1.post-title {border-bottom:none;}
+.post blockquote{background:transparent;color:#666;border:none;}
+nav,.sharepost,#BackToTop,#search,.breadcrumbs,.halaman,#blog-pager,.banner,#banner,.banner2,#banner2,#sidebar-wrapper,#subs-and-redat,#comments,#footer-wrapper,#header-wrapper,div#banner,div#banner2{opacity:0;display:none;visibility:hidden;width:0;height:0;}
+.status-msg-border{border:none;}
+.Stats .blind-plate{border-top:none;}}
+</style>
+</b:if>
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<style type='text/css'>
+/* CSS Post Wrapper */
+.post {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px dotted #ebebeb;
+    box-shadow: none;
+    color: #000;
+    margin: 0 0 1px;
+    padding: 0 10px 0 0;
+    transition: all 0.3s linear 0s;
+}
+.post:hover {transition:.3s linear;}
+.post-body {line-height:1.6em;color:#000;margin-right:10px;font-size:12px;text-overflow:ellipsis;}
+h2.post-title, h1.post-title {font-family:&#39;Open Sans&#39;,sans-serif;font-size:20px;font-weight:700;padding:15px 0;text-transform:none;text-align:left;border-bottom:none;border-top:none;}
+h2.post-title:hover, h1.post-title:hover {color:#000;}
+h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {color:#000;z-index:0;}
+h2.post-title a:hover, h1.post-title a:hover {color:#000!important;}
+.post-info a {display:inline;background:transparent;color:#979797;padding:5px;padding-left:0;margin-bottom:10px;transition:all .3s ease-out;}
+.post-info a:hover {background:transparent;color:#0099cc;}
+.author-info, .review-info, .comment-info, .time-info {margin-right:8px;display:inline;}
+.img-thumbnail {overflow:hidden;background:#e8ebf0;position:relative;float:left;width:236px;height:178px;margin:15px 15px 15px 0;z-index:1;padding:0;}
+.img-thumbnail img {width:236px;height:178px;}
+
+/* CSS Label Info */
+.post .label-info {position:absolute;top:15px;left:0;margin:0 auto;width:auto;z-index:1;}
+.label-info a {
+    background-color: red;
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    padding: 6px 12px;
+    transition: all 0.3s ease-out 0s;
+}
+.label-info a:hover{color:#fff;}
+.label-info a:nth-child(n+2),.breadcrumbs{display:none;}
+
+/* CSS Read More */
+a.read-more {position:absolute;display:inline-block;bottom:15px;background-color:#f78297;color:#fff;padding:5px 10px 4px;font-family:&#39;Open Sans&#39;;font-size:11px;font-weight:700;text-transform:uppercase;border-radius:2px;transition:all .3s ease-out;display: none;}
+a.read-more:hover,a.read-more:active {background-color:#f56c7e;color:#fff;}
+
+/* CSS Homepage Responsive */
+@media only screen and (max-width:640px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:18px;}
+.post-body {margin-bottom:10px;}
+a.read-more,.readm,.label-info {display:none;}
+.img-thumbnail {width:140px;height:100px;}
+.img-thumbnail img {width:140px;height:100px;}
+.img-thumbnail:before{display:none;}}
+
+@media only screen and (max-width:480px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:14px;}
+.img-thumbnail {width:80px;height:60px;}
+.img-thumbnail img {width:80px;height:60px;}
+.img-thumbnail:before,.post-body,.post-share,.comment-info{display:none!important;visibility:hidden;width:0;height:0;}
+.post {padding:0 0 25px 0;}}
+
+@media only screen and (max-width:320px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:14px;}}
+</style>
+</b:if>
+</b:if>
+
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<style type='text/css'>
+.post img{background:#f7f8fa;height:auto;max-width:95%;border:0;}
+
+@media print {
+body{padding:0}
+#post-wrapper{width:100%;margin:0 auto;}
+.post {background:#fff;margin:0 0 15px;padding:15px;box-shadow:none;border:none;}
+.post blockquote{background:transparent;color:#666;border:none;}
+nav,.sharepost,#BackToTop,#search,.breadcrumbs,.halaman,#blog-pager,#menu-wrap,.banner,#banner,#sidebar-wrapper,#subs-and-redat,#comments,#footer-wrapper,#header-wrapper,div#banner{display:none;visibility:hidden;width:0;height:0;}}
+</style>
+</b:if>
+
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<style type='text/css'>
+.header-wrapper, #header, #post-wrapper, #sidebar-wrapper {display:none;}
+
+/* CSS Custom Error Page */
+#oopss {background:rgba(255,255,255,0.98);text-align:center;margin-bottom:50px;font-weight:400;font-size:45px;font-family:&#39;Open Sans&#39;,sans-serif;position:fixed;width:100%;height:100%;line-height:1.5em;z-index:9999;}
+#error-text {top:30%;position:relative;font-size:40px;color:#666;}
+#error-text a{color:#666;}
+#error-text p {margin:0!important;}
+#error-text span {color:#f78297;font-size:100px;font-weight:700;}
+#error-text a.back {background:#f78297;color:#fff;padding:10px 20px;font-size:20px;font-weight:700;border:1px solid #fff;line-height:normal;text-transform:uppercase;border-radius:3px;-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1);transition:all 0.5s ease-out;}
+#error-text a.back:hover {background:#fff;color:#e59610;border:1px solid #f78297;}
+#error-text a.back:active {-webkit-transform:scale(0.9);-moz-transform:scale(0.9);transform:scale(0.9);background:#f56c7e;color:#fff;border:1px solid #f78297;}
+
+/* CSS Error Page Responsive */
+@media only screen and (max-width:640px){
+#error-text {color:#000;font-size:20px;}
+#error-text span {font-size:60px;}
+#error-text a.back {padding:5px 10px;font-size:15px;}
+#error-text a.back:hover,#error-text a.back:active {border:0;}}
+
+/* CSS Gambar Responsive */
+.post-body img {
+  max-width:100%;
+  height:auto;
+}
+
+/* disqus */
+#comments {display:none;margin:10px 15px }
+.post-comment-link { visibility: hidden; }
+
+</style>
+</b:if>
