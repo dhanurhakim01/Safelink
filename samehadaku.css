@@ -1255,3 +1255,26 @@ nav,.sharepost,#BackToTop,#search,.breadcrumbs,.halaman,#blog-pager,#menu-wrap,.
 
 </style>
 </b:if>
+
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+function bp_thumbnail_resize(image_url,post_title)
+{
+var image_width=236;
+var image_height=178;
+image_tag='<img width="'+image_width+'" height="'+image_height+'" src="'+image_url.replace('/s72-c/','/w'+image_width+'-h'+image_height+'-c/')+'" alt="'+post_title.replace(/"/g,"")+'" title="'+post_title.replace(/"/g,"")+'"/>';
+if(post_title!="") return image_tag; else return ""; 
+}
+//]]>
+</script>
+</b:if>
+</b:if>
+
+<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>
+<script type='text/javascript'>
+$(function() {
+$(&quot;.tabs-1&quot;).mtabs();                                
+});
+</script>
